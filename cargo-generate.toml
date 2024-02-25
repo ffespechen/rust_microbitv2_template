@@ -1,0 +1,13 @@
+[placeholders.board]
+type = "string"
+prompt = "Seleccione la micro:bit correspondiente"
+choices = [
+  "micro:bit v2",
+]
+default = "micro:bit v2"
+
+[template]
+ignore=["README.md"]
+
+[hooks]
+post = ["rename-readme.rhai"]
